@@ -20,17 +20,100 @@
     <section id="backups" class="content">
         <div id="backups-intro" class="page-title">
             <h1>Backups</h1>
+            <p>
+                Backups are an essential component of any company that collects data of any type.
+                These backups might include customer information, financcial records, company information,
+                or any other data that is relevant to the company and its operations.
+            </p>
         </div>
 
-        <h2>Backup Types</h2>
+        <div id="backup-best-pracices">
+            <h2>Best Pracices</h2>
+            <p>
+                CISA recommends following what they call the 3-2-1 rule found (<a href="https://www.cisa.gov/sites/default/files/publications/data_backup_options.pdf">here</a>). That is:
+                <ul>
+                    <li>Keep <b>3</b> copies of any important file: one of which is primary and two that are backups.</li>
+                    <li>Keep the files on <b>2</b> different media types to protect agains different types of hazards.</li>
+                    <li>Store <b>1</b> copy offsite.</li>
+                </ul>
+            </p>
+        </div>
 
-        <h2>Backup Frequency</h2>
+        <div id="backup-types">
+            <h2>Backup Types</h2>
+            <p>
+                There are several different types of backups. The most common ones are:
 
-        <h2>Storage Media</h2>
+                    <h3>Full Backup:</h3>
+                    <p>
+                        A complete copy of all data. There are advantages and disadvantages to each type of backup. A full backup copies all selected data.
+                        This takes up more storage space, and is slow to backup, but is the fastest to restore.
+                    </p>
+                    <h3>Incremental Backup: </h3>
+                    <p>
+                        Only copies data that has changed since the last backup. Incremental backups initially do a full backup. They then only copy changes made to the previous backup. 
+                        These take up less space, and are fast to backup, but take longer to restore. 
+                    </p>
+                    <h3>Differential Backup: </h3>
+                    <p>
+                        Only copies data that has changed since the last full backup. Differential backups are a mixture of the two. Differential also starts with
+                        a full backup. It then copies all changes made since the last full backup. This takes up an amount of space between
+                        full backups and incremental backups. It is moderately fast to backup and to restore.
+                    </p>
+                 
+            </p>
+        </div>
 
-        <h2>Disaster Recovery Plans</h2>
+        <div id="storage-media">
+            <h2>Storage Media</h2>
+            <p>
+                There are several different types of storage media that can be used for backups. The most common ones are:
+                <h3>Remote Backups (Cloud Storage)</h3>
+                <p>
+                    Remote backups are backups stored on a remote server. Often times, these servers are rented or loaned out. Common consumer
+                    cloud storage services include Google Drive, Dropbox, and Microsoft OneDrive. The benefits of using remote storage offers
+                    is protection from local incidents such as fires or floods. Additionally, data can be accessed anywhere that a user has
+                    internet access, making it easy to backup and restore data. The downsides of remote storage is price, the potential to be locked
+                    into a specific vendor, and lack of control over how your data is controlled and stored.
+                </p>
 
-        <h2>Testing Backups</h2>
+                <h3>Internal Hard Drives</h3>
+                <p>
+                    Hard drives are a common storage medium for backups. They are relatively cheap and can store a large amount of data. Since backups
+                    can be made locally this way, they can be used to quickly restore data. Unfortunately, hard drives are consumable and have the potential
+                    to fail or become damaged, especially as the age. 
+                </p>
+                <h3>Removable Storage Media</h3>
+                <p>
+                    Removable storage media includes USB drives, CDs, and external hard drives. These are cheap and easy to use. They can be used to store 
+                    data offline, and can be easily transported. Due to increased mobility, these can be lost, stolen, and can be damaged easily.
+                </p>
+            </p>
+        </div>
+
+        <div id="backup-frequency">
+            <h2>Backup Frequency</h2>
+            Backups should be done frequently, though "frequently" might mean different things depending on the business and the type of data being backed up.
+            Critical data can be backed up daily, or even hourly. Less critical data can be backed up weekly or even monthly. Ultimately the frequency backups
+            should be determined by the business and the policies it has decided to put in place.
+        </div>
+
+        <div id="disaster-recovery">
+            <h2>Disaster Recovery Plans</h2>
+            <p>
+                Disaster recovery plans are a critical component of backups. These plans detail how a business will recover from a disaster, such as a fire, flood, or
+                cyber attack. These plans should be tested regularly to ensure that they work as intended. These plans should be updated as the business changes and
+                grows. These plans will also change depending on the chosen policy.
+            </p>
+        </div>
+
+        <div id="testing-backups">
+            <h2>Testing Backups</h2>
+            <p>
+                Backups should be tested regularly to ensure that they work as intended. This can be done by restoring data from the backup and ensuring that it is
+                accurate and complete. This can be done manually, or with the help of software. Testing is critical, as backups can become corrupted, go missing, or
+                become outdated. Regular testing ensures data is ready to be restored in the event of a disaster.
+        </div>
 
     </section>
 
