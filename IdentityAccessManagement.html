@@ -26,8 +26,8 @@
                 and ensure compliance with security policies. IAM is included in many cloud services, such as Microsoft Azure, Google Cloud Platform, and Amazon Web Services,
                 though it can also be implemented on-premises using group policies, Active Directory, or other directory services.
 
-                NIST is a valuable resource for IAM, providing the SP 800-63, a series of documents that outline the standards and guidelines for digital identity management that
-                can be found <a href="https://pages.nist.gov/800-63-3/">here</a>.
+                NIST provides a comprehensive guide to IAM in their SP 800-63 series, which outlines the standards and guidelines for digital identity management.
+                You can find the NIST SP 800-63 series <a href="https://pages.nist.gov/800-63-3/">here</a>, though each section will be linked in its applicable subsection below.
             </p>
         </div>
 
@@ -37,13 +37,19 @@
                 Authentication mechanisms are the methods used to verify the identity of users or systems before granting access to resources. 
                 Common authentication methods include passwords, multi-factor authentication (MFA), biometrics, and digital certificates. 
                 Implementing strong authentication mechanisms is crucial for protecting sensitive data and preventing unauthorized access.
+
+                NIST's SP 800-63B document provides guidelines for digital identity authentication, including the use of multi-factor authentication and other methods.
+                You can access the document <a href="https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63b.pdf">here</a>.
             </p>
         </div>
         <div id="Privileged-Access-Management">
             <h2>Privileged Access Management</h2>
             <p>
-                Privileged Access Management (PAM) is a subset of IAM that focuses on managing and monitoring accounts with elevated access rights. 
-                PAM solutions help organizations secure, control, and monitor access to critical systems and sensitive data, reducing the risk of insider threats and data breaches.
+                Privileged Access Management (PAM) is a subset of IAM that focuses on managing and monitoring accounts with elevated access rights. PAM solutions help organizations 
+                secure, control, and monitor access to critical systems and sensitive data, reducing the risk of insider threats and data breaches. This is done by enforcing the principle
+                of least privilege, ensuring that users only have access to the resources necessary for their roles. 
+
+                The SP 800-53 is also a valuable resource for PAM implementation, which can be found <a href="https://csrc.nist.gov/CSRC/media/Projects/risk-management/800-53%20Downloads/800-53r5/SP_800-53_v5_1-derived-OSCAL.pdf">here</a>.
             </p>
         </div>
 
@@ -55,7 +61,8 @@
                 This allows for easier management of user access rights, as users can be assigned to roles that have predefined permissions, rather than managing permissions on 
                 a per-user basis.
 
-                NIST provides guidelines for implementing RBAC in their SP 800-162 document, which can be found in their ABAC guide <a href="https://csrc.nist.gov/pubs/sp/800/162/upd2/final">here</a>.
+                NIST provides guidelines for implementing RBAC in their SP 800-162 document, which can be found in their Attribute Based Access Control (ABAC) guide located
+                <a href="https://csrc.nist.gov/pubs/sp/800/162/upd2/final">here</a>.
             </p>
         </div>
 
